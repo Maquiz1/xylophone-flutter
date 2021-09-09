@@ -17,7 +17,7 @@ class XylophoneApp extends StatelessWidget {
       child: TextButton(
         style: ButtonStyle(
           foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-          backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
+          backgroundColor: MaterialStateProperty.all<Color>(Colors.red),  // This still not working // fail to change color
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(18.0),
@@ -43,7 +43,7 @@ class XylophoneApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,   //Use this layout for to expand entire rows
             children: <Widget>[
-              buildKey(color: Colors.red, soundNumber: 1),
+              buildKey(color: Colors.pink, soundNumber: 1),
               buildKey(color: Colors.blue, soundNumber: 2),
               buildKey(color: Colors.yellow, soundNumber: 3),
               buildKey(color: Colors.orange, soundNumber: 4),
